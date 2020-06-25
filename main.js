@@ -2,49 +2,62 @@
  * YOUR CODE HERE *
  ******************/
 
+
+
+
 //#1//
 function getFirstItemFrom(arr){
   return arr[0]
 }
-console.log(getFirstItemFrom('francis, eclevia'))
 
 //#2//
 function getLastItemFrom(arr){
-  return arr[arr.length]
+  return arr[arr.length-1]
 }
-console.log(getLastItemFrom['francis, eclevia'])
 
-//#3//** */
-
+//#3//** 
 function getIndex3(arr){
-  return arr[3]
+  if (arr.length < 4 ){
+    return arr.length-1;
+  } else 
+  return arr[3];
+
 }
-console.log(getIndex3('Hello, Mr, Francis'))
+
+// let num =[1, 3, 5, 7];
+// getIndex3(3);
 
 //#4//
 function isLongList(arr){
 
-  if (arr.length <= 10){
-    return false; 
+  if (arr.length >= 10){
+    return true; 
+  } else 
+    return false;
   }
-}
-console.log(isLongList('francis'))
 
-//#5//*** */
+// console.log(isLongList('francissdfdfdf'))
+
+//#5//
 function firstItemIsNumber(arr){
 
-  if (arr[0] === num){
+  if (arr[0] === "number"){
     return true;
+  
   }
 }
-  console.log(isLongList(5))
+  // console.log(isLongList('fffn'))
+
+
+
+
 
   //#6//
   function secondCharOThirdString(arr){
-    return arr[2][1];
-
+      let greatWord = arr[2];
+      return greatWord[1];
   }
-  console.log(secondCharOThirdString('My Name Is Francis'))
+ 
 
 
 
